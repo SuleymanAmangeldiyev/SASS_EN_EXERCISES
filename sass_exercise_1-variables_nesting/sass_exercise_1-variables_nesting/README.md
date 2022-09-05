@@ -18,3 +18,12 @@ border: 1px solid $color-primary;
         color: $color-tertiary;
     }
 }
+
+<!--
+ The first step is the to understant what the want to get from the task
+ -->
+
+ 1. to make positions
+ 2. to give colors
+ 3. to give styles
+ 4. to send it back

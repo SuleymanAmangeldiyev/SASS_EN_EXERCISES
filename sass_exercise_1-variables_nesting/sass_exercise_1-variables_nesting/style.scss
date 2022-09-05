@@ -1,1 +1,53 @@
-
+// the first step is using variables on the scss file
+$colors-sass: green;
+$colors-first-lorem: blue;
+$colors-second-lorem: red;
+* {
+  // This is just for to give the better style
+  padding: 0;
+  margin: 0;
+// 
+  body {
+  //This line gives the better style to the page
+    padding: 20px;
+    // Here's starting the the table
+    div {
+      // This element is for the main table style and it is containg the all the elements here is... 
+      border: 2px solid $colors-second-lorem;
+      padding: 20px;
+      // The (h1) selector gives the style for the header of table
+      h1 {
+        // The color for the h1 has taken from the above...
+        color: $colors-sass;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: $colors-first-lorem;
+        // Here is the (h1) selector is ended because the h1 element doesn't contain any element of inside it...
+      }
+      // Here is the article table controls are starting
+      section {
+        // This is article table style controls
+        display: flex;
+        margin-top: 20px;
+        // Here's article controls
+        article {
+          // This gives main controls
+          border: 2px solid $colors-sass;
+          padding: 20px;
+          text-align: center;
+          // This gives bule color to the odd articles
+          p.fs {
+            // 
+            color: $colors-first-lorem;
+            // 
+          }
+          // This gives red color to the even articles
+          p.sc {
+            // 
+            color: $colors-second-lorem;
+          }
+        }
+      }
+    }
+  }
+}

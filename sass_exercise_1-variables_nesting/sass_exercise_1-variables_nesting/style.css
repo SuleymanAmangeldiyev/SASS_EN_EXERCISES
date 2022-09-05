@@ -1,0 +1,37 @@
+/* This comandis will be taken from the style.scss file */
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+* body {
+  padding: 20px;
+}
+* body div {
+  border: 2px solid red;
+  padding: 20px;
+}
+* body div h1 {
+  color: green;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+* body div section {
+  display: flex;
+  margin-top: 20px;
+}
+* body div section article {
+  border: 2px solid green;
+  padding: 20px;
+  text-align: center;
+}
+* body div section article p.fs {
+  color: blue;
+}
+* body div section article p.sc {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
