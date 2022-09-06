@@ -1,0 +1,59 @@
+// i think this line of code doesn't do anything right now, but i just put it
+@use "sass:color";
+// This is line of code does work like struct function in c
+@mixin article-card($prope, $b-value, $f-value) {
+  color: $prope;
+  border-color: $b-value;
+  font-size: $f-value;
+}
+
+body {
+// this line of code gives the padding to the main page
+  padding: 20px;
+
+  div {
+// this line of codes give the border style for the first line of border
+    border: 2px solid red;
+    padding: 10px;
+    h1 {
+// this blok of codes gives the header style for the table
+      text-align: center;
+      color: green;
+      text-decoration: underline;
+      text-decoration-color: blue;
+    }
+    #s1 {
+// this section of codes displays the first line of tables
+      display: flex;
+      margin: 10px;
+
+      .a1,
+      .a3 {
+// this line of codes keep the 1th and 3th block styles
+        border: 2px solid;
+        text-align: center;
+        padding: 10px;
+        @include article-card(blue, lightgreen, 1rem);
+      }
+      .a2,
+      .a4 {
+// this line of codes keep the 2th and 4th block styles
+        padding: 10px;
+        text-align: center;
+        border: 2px solid;
+        @include article-card(red, lightgreen, 1rem);
+      }
+    }
+    #s2 {
+// this section keeps the table footer table's style codes
+      p{
+        margin-left: 10px;
+        margin-right: 10px;
+        border: 2px solid;
+        text-align: center;
+        padding: 10px;
+          @include article-card(lightgreen, blue, 24px);
+      }
+    }
+  }
+}

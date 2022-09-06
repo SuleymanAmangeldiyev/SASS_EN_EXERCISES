@@ -1,0 +1,47 @@
+body {
+  padding: 20px;
+}
+body div {
+  border: 2px solid red;
+  padding: 10px;
+}
+body div h1 {
+  text-align: center;
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+body div #s1 {
+  display: flex;
+  margin: 10px;
+}
+body div #s1 .a1,
+body div #s1 .a3 {
+  border: 2px solid;
+  text-align: center;
+  padding: 10px;
+  color: blue;
+  border-color: lightgreen;
+  font-size: 1rem;
+}
+body div #s1 .a2,
+body div #s1 .a4 {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid;
+  color: red;
+  border-color: lightgreen;
+  font-size: 1rem;
+}
+body div #s2 p {
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid;
+  text-align: center;
+  padding: 10px;
+  color: lightgreen;
+  border-color: blue;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
