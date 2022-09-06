@@ -1,7 +1,7 @@
 // i think this line of code doesn't do anything right now, but i just put it
 @use "sass:color";
 // This is line of code does work like struct function in c
-@mixin article-card($prope, $b-value, $f-value) {
+@mixin article-card($prope, $b-value, $f-value: 1rem) { // I have forgotten to put default value for the font-zie, so i put it here
   color: $prope;
   border-color: $b-value;
   font-size: $f-value;
@@ -33,7 +33,7 @@ body {
         border: 2px solid;
         text-align: center;
         padding: 10px;
-        @include article-card(blue, lightgreen, 1rem);
+        @include article-card(blue, lightgreen);
       }
       .a2,
       .a4 {
@@ -41,7 +41,7 @@ body {
         padding: 10px;
         text-align: center;
         border: 2px solid;
-        @include article-card(red, lightgreen, 1rem);
+        @include article-card(red, lightgreen);
       }
     }
     #s2 {
