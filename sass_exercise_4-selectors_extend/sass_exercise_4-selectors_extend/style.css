@@ -1,0 +1,53 @@
+body {
+  padding: 1.25rem;
+}
+body {
+  border: 0.125rem solid #676767;
+  padding: 0.625rem;
+}
+body h1, body h2 {
+  color: #505050;
+  text-decoration: underline;
+  text-decoration-color: purple;
+  text-align: center;
+}
+body h2 {
+  max-width: 25rem;
+  border: 2px solid red;
+  padding: 1rem;
+  text-decoration: none;
+}
+body #s1 {
+  display: flex;
+  margin: 0.625rem;
+}
+body #s1 .a1,
+body #s1 .a3 {
+  border: 0.125rem solid;
+  text-align: center;
+  padding: 0.625rem;
+  color: blue;
+  border-color: lightgreen;
+  font-size: 1rem;
+}
+body #s1 .a2,
+body #s1 .a4 {
+  padding: 0.625rem;
+  text-align: center;
+  border: 0.125rem solid;
+  color: #bf2000;
+  border-color: lightgreen;
+  font-size: 1rem;
+}
+body #s2 {
+  border: 0.125rem solid;
+  text-align: center;
+  padding: 0.625rem;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+  color: lightgreen;
+  border-color: blue;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

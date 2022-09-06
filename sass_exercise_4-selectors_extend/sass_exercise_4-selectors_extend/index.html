@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Sass exercise 4 - selectors and extend method</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <div>
-            <h1>Sass exercise 4 - selectors and extend method</h1>
-            <h2>Sass exercise 4 - subtitle</h2>
-            <section>
-                <article>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                </article>
-                <article>
-                    <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-                </article> 
-                <article>
-                    <p>"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
-                </article> 
-                <article>
-                    <p>"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                </article>
-            </section>
-        </div>
-    </body>
+  <head>
+    <title>Sass exercise 4 - selectors and extend method</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Sass exercise 4 - selectors and extend method</h1>
+      <!-- NOTE: for here, this center command works here, but in the scss file for text-align command didn't work...? -->
+      <!-- i know i shouldn't use this center command in HTML but, the text-align command didn't work in scss file so i used here... -->
+      <center>
+        <h2>Sass exercise 4 - subtitle</h2>
+      </center>
+      <section id="s1">
+        <article class="a1">
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          </p>
+        </article>
+        <article class="a2">
+          <p>
+            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat."
+          </p>
+        </article>
+        <article class="a3">
+          <p>
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur."
+          </p>
+        </article>
+        <article class="a4">
+          <p>
+            "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum."
+          </p>
+        </article>
+      </section>
+      <section id="s2">
+        <article>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          </p>
+        </article>
+      </section>
+    </div>
+  </body>
 </html>

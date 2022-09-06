@@ -1,0 +1,91 @@
+@use "sass:color";
+// NOTE: i haven't import any functions from the different files so everything in this line of
+// file only, but i saw that scss works like any other programming languages, but a little bit it has different styles ...
+// This function works like real programming functions
+@function rem($size) {
+  // this converted number to rem
+  @return calc($size / 16) + rem;
+}
+// This is line of code does work like struct function in c
+@mixin article-card($prope, $b-value, $f-value) {
+  color: $prope;
+  border-color: $b-value;
+  font-size: $f-value;
+}
+
+@mixin margins($fs, $se) {
+  margin-left: $fs;
+  margin-right: $se;
+}
+// This line of codes mixes the colors, and returns to the uppers value
+$uppers: color.mix(red, green, 75%);
+
+body {
+  // this line of code gives the padding to the main page
+  padding: rem(20);
+
+  & {
+    // this line of codes give the border style for the first line of border
+    border: rem(2) solid adjust-color($color: gray, $lightness: -10%, $alpha: 1);
+    padding: rem(10);
+
+    h1 {
+      // this blok of codes gives the header style for the table
+      color: adjust-color($color: gray, $lightness: -19%, $alpha: 1);
+      text-decoration: underline;
+      text-decoration-color: color.complement($color: green);
+      text-align: center;
+    }
+    h2 {
+      // it didn't get the (text-align: center) command...
+      // this just make it better...
+      max-width: rem(400);
+
+      border: 2px solid red;
+      padding: 1rem;
+      // this line of codes gets commands from the (h1) selectors code
+      @extend h1;
+
+      text-decoration: none;
+    }
+    #s1 {
+      // this section of codes displays the first line of tables
+      display: flex;
+      margin: rem(10);
+      // for now i don't know how to use & command for the all selectors so i have used first class
+      .a1,
+      .a3 {
+        & {
+          // this line of codes keep the 1th and 3th block styles
+          border: rem(2) solid;
+          text-align: center;
+          padding: rem(10);
+          @include article-card(blue, lightgreen, 1rem);
+        }
+      }
+      .a2,
+      .a4 {
+        & {
+          // this line of codes keep the 2th and 4th block styles
+          padding: rem(10);
+          text-align: center;
+          border: rem(2) solid;
+          @include article-card($uppers, lightgreen, 1rem);
+        }
+      }
+    }
+    #s2 {
+      // this section keeps the table footer table's style codes
+      & {
+        & {
+          border: rem(2) solid;
+          text-align: center;
+          padding: rem(10);
+          // This line of codes gets comands from the margins
+          @include margins(rem(10), rem(10));
+          @include article-card(lightgreen, blue, rem(24));
+        }
+      }
+    }
+  }
+}
