@@ -15,3 +15,22 @@ The added colors are black and white only
 
     }
 }
+
+
+-------------------------------
+
+P.code for the section 2.
+
+need to make...
+step = s.
+
+-------
+keep to adding o;
+s.1 = fz, 16 : o, 0;
+s.2 = to add fz, and p-t;
+s.3 = to add fz, and p-t;
+--
+to stop adding fz, and p-t;
+s.4 = to start again to adding fz, p-t;
+s.5 = (to use your own real programming k...);
+s.6 = (...)
