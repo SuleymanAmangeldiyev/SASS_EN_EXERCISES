@@ -24,7 +24,11 @@ body {
   // this line of code gives the padding to the main page
   padding: rem(20);
 
-  & {
+  div {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
     // this line of codes give the border style for the first line of border
     border: rem(2) solid adjust-color($color: gray, $lightness: -10%, $alpha: 1);
     padding: rem(10);
@@ -40,9 +44,10 @@ body {
       // it didn't get the (text-align: center) command...
       // this just make it better...
       max-width: rem(400);
-
+            text-align: center;
       border: 2px solid red;
       padding: 1rem;
+      // margin: 0 auto;
       // this line of codes gets commands from the (h1) selectors code
       @extend h1;
 

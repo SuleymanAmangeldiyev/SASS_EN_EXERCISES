@@ -100,30 +100,16 @@ body {
           //This function doesn't work from outside ....
           box-sizing: border-box;
 
-          // this if function works like for the last element rules ...
-          @if $var <4 {
-            // this line of codes give the lightness to the texts
-            color: color.adjust(black, $lightness: $var * 5%);
-
-            background-color: rgb(0, 0, 0, $ops);
-          } @else if $var < 7 {
-            color: color.adjust(black, $lightness: $var * 5%);
-            background-color: rgb(0, 0, 0, $ops);
-          } @else if $var == 10 {
+          // this line of codes give the lightness to the texts
+          color: color.adjust(black, $lightness: $var * 5%);
+          background-color: rgb(0, 0, 0, $ops);
+          
+          @if $var == 10 {
             //this line of codes keeps for main red box...
             padding-top: 3px;
             font-weight: bold;
             color: red;
             background-color: blue;
-          } @else if $var < 14 {
-            color: color.adjust(black, $lightness: $var * 5%);
-            background-color: rgb(0, 0, 0, $ops);
-          } @else if $var < 17 {
-            color: color.adjust(black, $lightness: $var * 5%);
-            background-color: rgb(0, 0, 0, $ops);
-          } @else if $var < 20 {
-            color: color.adjust(black, $lightness: $var * 5%);
-            background-color: rgb(0, 0, 0, $ops);
           }
         }
       }

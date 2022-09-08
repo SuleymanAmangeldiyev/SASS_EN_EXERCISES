@@ -178,6 +178,8 @@ body #s2 .ans-10 {
   width: 3.2142857143rem;
   border: 1px solid red;
   box-sizing: border-box;
+  color: gray;
+  background-color: rgba(0, 0, 0, 0.5);
   padding-top: 3px;
   font-weight: bold;
   color: red;
