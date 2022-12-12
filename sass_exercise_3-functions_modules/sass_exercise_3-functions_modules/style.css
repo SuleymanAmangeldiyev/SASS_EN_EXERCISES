@@ -1,20 +1,24 @@
 body {
   padding: 1.25rem;
 }
+
 body div {
   border: 0.125rem solid #676767;
   padding: 0.625rem;
 }
+
 body div h1 {
   text-align: center;
   color: #505050;
   text-decoration: underline;
   text-decoration-color: purple;
 }
+
 body div #s1 {
   display: flex;
   margin: 0.625rem;
 }
+
 body div #s1 .a1,
 body div #s1 .a3 {
   border: 0.125rem solid;
@@ -24,6 +28,7 @@ body div #s1 .a3 {
   border-color: lightgreen;
   font-size: 1rem;
 }
+
 body div #s1 .a2,
 body div #s1 .a4 {
   padding: 0.625rem;
@@ -33,6 +38,7 @@ body div #s1 .a4 {
   border-color: lightgreen;
   font-size: 1rem;
 }
+
 body div #s2 p {
   border: 0.125rem solid;
   text-align: center;
@@ -43,5 +49,7 @@ body div #s2 p {
   border-color: blue;
   font-size: 1.5rem;
 }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
